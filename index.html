@@ -7,7 +7,8 @@
     
     <!--------- FICHIERS CSS -------------->
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
 
     <!--------- POLICES -------------->
     <!--Rubik / Adobe fonts -->
@@ -19,6 +20,30 @@
 
 </head>
 <body>
-    TIM
+  
+  <!-- TEST DES STYLES: HEADER / HERO -->
+  <header class="container">
+    <div class="flex-row">
+      <h1>TIM-ProfsPivots</h1>
+      <nav class="flex-row">
+        <a href="#">Accueil</a>
+        <a href="#">Collège</a>
+        <a href="#">TIM</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TEST DES STYLES: SECTION CONTENU -->
+  <section class="container">
+    <div class="flex-col" style="grid-column: span 8;">
+      <h2>Sous-titre principal</h2>
+      <p>
+        Paragraphe de test pour voir l'application des variables 
+        de texte, de couleurs et d’interlignes. 
+        <a href="#">Hover ici</a> pour vérifier les effets au survol.
+      </p>
+      <button>test de bouton</button>    
+    </div>
+  </section>
 </body>
 </html>
