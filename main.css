@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# Fichier de définition des VARIABLES globales
+--------------------------------------------------------------*/
+/******* COULEURS GLOBALES */
+:root {
+
+--default-font: "Rubik", sans-serif;
+--heading-font: "TASA Orbiter", sans-serif;
+
+  /* --- Tailles de texte (mobile par défaut) --- */
+  --hero: 2.25rem; /* gros titre sur mobile */
+  --h1: 1.75rem; /* titre principal */
+  --h2: 1.5rem; /* sous-titre */
+  --h3: 1.25rem;
+  --body: 0.95rem;   /* texte de base */
+  --small: 0.8rem;   /* sources, crédits */
+}
+
+
+/******* COULEURS GLOBALES */
+:root {
+--bc-light: #ffffff;
+--bc-dark: #121212;
+
+/* Couleurs standarts */
+--principal-standart: #35C8E9; /* Couleur principale */
+--secondaire-standart: #A459FF; /* Couleur secondaire, éléments interactifs */
+--ac-standart-1: #B0DE47; /* Couleur d'accent */
+--ac-standart-2: #F1438E; /* Couleur d'accent */
+--ac-standart-3: #FF841C; /* Couleur d'accent, CTA (Call to action)  */
+
+/* Couleurs pales */
+--principal-light: #C2E7FF;
+--secondaire-light: #EFCAFF;
+--ac-light-1: #E0FFCB;
+--ac-light-2: #FFBFD0;
+--ac-light-3: #FFEAC3;
+
+/* Couleurs foncées */
+--principal-dark: #1A5F8A;
+--secondaire-dark: #511688;
+--ac-dark-2: #497E25;
+--ac-dark-3: #A65600;
+--ac-dark-5: #910037;
+}
+
+/******* TEXTES */
+:root {
+  --text-light: #1a1a1a; /* texte sur fond clair */
+  --text-dark:  #f5f5f5; /* texte sur fond sombre */
+}
+
+/******* ÉTATS */
+:root {
+  --focus-outline: var(--secondaire-standart); /* pour outline ou box-shadow focus */
+  --link-hover: var(--principal-standart);    /* survol des liens */
+  --link-active: var(--principal-dark);       /* lien actif */
+}
+
+/******* OMBRES ET TRANSITIONS */
+:root {
+  --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.15); /* box-shadow */
+  --shadow-strong: 0 8px 16px rgba(0, 0, 0, 0.3); /* box-shadow */
+  --transition-fast: all 0.2s ease;/* transition */
+  --transition-slow: all 0.5s ease; /* transition */
+}
+
+/******* COULEURS DU MENU */
+:root {
+  /* backgrounds */
+  --menu-bg-light: var(--bc-light);
+  --menu-bg-dark: var(--bc-dark);
+
+  /* boutons primaires */
+  --menu-btn-bg: var(--principal-standart);
+  --menu-btn-hover: var(--principal-light);
+  --menu-btn-active: var(--principal-dark);
+
+  /* boutons secondaires */
+  --menu-btn2-bg: var(--ac-standart-3);
+  --menu-btn2-hover: var(--ac-light-3);
+  --menu-btn2-active: var(--ac-dark-3);
+
+  /* border / hover lines */
+  --menu-border-hover: var(--principal-standart);
+}

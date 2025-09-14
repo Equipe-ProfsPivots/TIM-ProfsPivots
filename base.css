@@ -1,0 +1,135 @@
+/* Styles de base – MOBILE FIRST
+   Mise en page globale du texte et des éléments HTML courants.*/
+
+html {
+  box-sizing: border-box;
+  font-size: 100%; /* base 16px = 1rem */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--default-font);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Titres ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  line-height: var(--lh-tight);
+  color: var(--heading-color-light);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.9rem; }
+
+/* ---- Paragraphes ---- */
+p {
+  margin-top: 0;
+  margin-bottom: var(--paragraph-spacing);
+}
+
+/* ---- Liens ---- */
+a {
+  color: var(--link-default);
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--link-hover);
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+/* ---- Listes ---- */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: var(--paragraph-spacing);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Images ---- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- Boutons ---- */
+button,
+input[type="submit"] {
+  background-color: var(--principal-standart);
+  color: #fff;
+  font-family: var(--default-font);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--principal-light);
+  transform: scale(1.03);
+}
+
+button:active,
+input[type="submit"]:active {
+  background-color: var(--principal-dark);
+  transform: scale(0.97);
+}
+
+/* ---- Formulaires ---- */
+input,
+textarea,
+select {
+  font-family: var(--default-font);
+  font-size: var(--fs-body);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--focus-outline);
+  box-shadow: 0 0 0 3px rgba(164, 89, 255, 0.3); /* halo violet doux */
+  outline: none;
+}
+
+/* ---- Sections ---- */
+section {
+  padding: 2rem 0;
+}
+
+/* ---- Helpers ---- */
+.hidden {
+  display: none !important;
+}
