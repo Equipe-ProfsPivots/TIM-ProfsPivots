@@ -55,7 +55,7 @@
   --fs-h2: 1.5rem;      /* sous-titre */
   --fs-h3: 1.25rem;
   --fs-body: 0.95rem;   /* texte de base */
-  --fs-small: 0.8rem;   /* légendes, mentions légales */
+  --fs-small: 0.8rem;   /* crédits, mentions */
 
   /* --- Graisses et interlignes --- */
   --fw-regular: 400;
@@ -90,24 +90,4 @@
   --lh-tight: 1.2;
   --lh-normal: 1.5;
   --lh-relaxed: 1.8;
-}
-
-/******* COULEURS DU MENU */
-:root {
-  /* backgrounds */
-  --menu-bg-light: var(--bc-light);
-  --menu-bg-dark: var(--bc-dark);
-
-  /* boutons primaires */
-  --menu-btn-bg: var(--principal-standart);
-  --menu-btn-hover: var(--principal-light);
-  --menu-btn-active: var(--principal-dark);
-
-  /* boutons secondaires */
-  --menu-btn2-bg: var(--ac-standart-3);
-  --menu-btn2-hover: var(--ac-light-3);
-  --menu-btn2-active: var(--ac-dark-3);
-
-  /* border / hover lines */
-  --menu-border-hover: var(--principal-standart);
 }

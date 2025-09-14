@@ -34,7 +34,7 @@
   gap: var(--gap-medium);
 }
 
-.flex-col {
+.flex-column {
   display: flex;
   flex-direction: column;
   gap: var(--gap-small);

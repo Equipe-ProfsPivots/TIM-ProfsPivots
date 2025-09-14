@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.75em;
   line-height: var(--lh-tight);
-  color: var(--heading-color-light);
+  color: var(--text-dark);
 }
 
 h1 { font-size: var(--fs-h1); }
@@ -39,20 +39,17 @@ p {
   margin-top: 0;
   margin-bottom: var(--paragraph-spacing);
   font-family: var(--default-font);
-
 }
 
 /* ---- Liens ---- */
 a {
-  color: var(--link-default);
-  text-decoration: none;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+    color: var(--principal-standart);
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
   color: var(--link-hover);
-  border-bottom: 1px solid var(--link-hover);
 }
 
 a:active {
@@ -60,8 +57,7 @@ a:active {
 }
 
 /* ---- Boutons ---- */
-button,
-input[type="submit"] {
+.bouton-principal {
   background-color: transparent;           
   color: var(--principal-standart);            
   font-family: var(--default-font);
@@ -69,36 +65,6 @@ input[type="submit"] {
   font-weight: var(--fw-medium);
   padding: 0.6rem 1.8rem;
   border: 2px solid var(--principal-standart);
-  border-radius: 6px;
   cursor: pointer;
   width: 300px;
-  transition: color 0.3s ease, border-color 0.3s ease,
-              background-color 0.3s ease, box-shadow 0.3s ease,
-              transform 0.25s ease;
-}
-
-button:hover,
-input[type="submit"]:hover {
-  color: var(--principal-dark); 
-  border-color: var(--principal-dark);
-  background-color: rgba(53,200,233,0.08);
-  box-shadow: 0 0 12px var(--principal-light);
-  transform: translateY(-2px) scale(1.04);
-}
-
-button:active,
-input[type="submit"]:active {
-  color: var(--principal-dark);
-  border-color: var(--principal-dark);
-  background-color: rgba(53,200,233,0.15);
-  transform: translateY(0) scale(0.98);
-}
-
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--focus-outline);
-  box-shadow: var(--shadow-hard);
-  outline: none;
 }
