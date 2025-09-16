@@ -1,28 +1,10 @@
-/****** MEDIAS QUERIES */
+/*--------------------------------------------------------------
+# Mise en page – CLASSES FLEXBOX + BREAKPOINTS MEDIA QUERIES
+--------------------------------------------------------------*/
 /* Breakpoints globaux */
 :root {
-  --bp-grand-ecran: 992px;
+  --bp-grand-ecran: 1024px;
   --bp-tablette: 768px;
-  --bp-telephone: 576px;
-}
-
-/****** GRILLES */
-:root {
-  --container-max: 1200px;
-  --gap-large: 3rem;
-  --gap-medium: 2rem;
-  --gap-small: 1rem;
-}
-
-/****** CONTENEUR CENTRAL */
-.container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 var(--gap-medium);
-  display: grid;
-  /* Avec griles intégrées */
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--gap-large);
 }
 
 /****** FLEXBOX */
@@ -30,12 +12,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--gap-medium);
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-small);
 }

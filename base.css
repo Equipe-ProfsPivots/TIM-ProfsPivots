@@ -1,9 +1,9 @@
-/* Styles de base – MOBILE FIRST
-   Mise en page globale du texte et des éléments HTML courants.*/
+/*--------------------------------------------------------------
+# Styles de base
+--------------------------------------------------------------*/
 
 html {
   box-sizing: border-box;
-  font-size: 100%;
 }
 
 *, *::before, *::after {
@@ -13,18 +13,17 @@ html {
 body {
   font-family: var(--default-font);
   font-size: var(--fs-body);
-  line-height: var(--lh-normal);
   margin: 0;
   padding: 0;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 /* ---- Titres ---- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  margin-top: 0;
-  margin-bottom: 0.75em;
-  line-height: var(--lh-tight);
-  color: var(--text-dark);
 }
 
 h1 { font-size: var(--fs-h1); }
@@ -36,35 +35,18 @@ h6 { font-size: 0.9rem; }
 
 /* ---- Paragraphes ---- */
 p {
-  margin-top: 0;
-  margin-bottom: var(--paragraph-spacing);
   font-family: var(--default-font);
 }
 
 /* ---- Liens ---- */
 a {
-    color: var(--principal-standart);
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: var(--link-hover);
-}
-
-a:active {
-  color: var(--link-active);
+  text-decoration: none;
 }
 
 /* ---- Boutons ---- */
-.bouton-principal {
-  background-color: transparent;           
-  color: var(--principal-standart);            
+button{
   font-family: var(--default-font);
   font-size: var(--fs-body);
-  font-weight: var(--fw-medium);
-  padding: 0.6rem 1.8rem;
-  border: 2px solid var(--principal-standart);
   cursor: pointer;
-  width: 300px;
+  border-width: 1.5px;
 }

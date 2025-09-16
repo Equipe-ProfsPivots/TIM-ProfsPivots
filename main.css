@@ -1,19 +1,11 @@
 /*--------------------------------------------------------------
 # Fichier de définition des VARIABLES globales
 --------------------------------------------------------------*/
-/******* COULEURS GLOBALES */
+/******* POLICES */
 :root {
 
 --default-font: "Rubik", sans-serif;
 --heading-font: "TASA Orbiter", sans-serif;
-
-  /* --- Tailles de texte (mobile par défaut) --- */
-  --hero: 2.25rem; /* gros titre sur mobile */
-  --h1: 1.75rem; /* titre principal */
-  --h2: 1.5rem; /* sous-titre */
-  --h3: 1.25rem;
-  --body: 0.95rem;   /* texte de base */
-  --small: 0.8rem;   /* sources, crédits */
 }
 
 
@@ -49,45 +41,42 @@
   --text-dark: #1a1a1a; /* texte sur fond clair */
   --text-light:  #f5f5f5; /* texte sur fond sombre */
 
-  /* --- Tailles de texte (mobile par défaut) --- */
+  /* Tailles de texte*/
+  
+  /* --- Mobile--- */
   --fs-hero: 2.25rem;   /* gros titre sur mobile */
   --fs-h1: 1.75rem;     /* titre principal */
   --fs-h2: 1.5rem;      /* sous-titre */
   --fs-h3: 1.25rem;
   --fs-body: 0.95rem;   /* texte de base */
   --fs-small: 0.8rem;   /* crédits, mentions */
-
-  /* --- Graisses et interlignes --- */
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-bold: 700;
-
-  --lh-tight: 1.2;
-  --lh-normal: 1.5;
-  --lh-relaxed: 1.8;
-
-  --paragraph-spacing: 1rem;
 }
 
-
-/******* ÉTATS */
-:root {
-  --focus-outline: var(--secondaire-standart); /* pour outline ou box-shadow focus */
-  --link-hover: var(--principal-standart);    /* survol des liens */
-  --link-active: var(--principal-dark);       /* lien actif */
+/* --- Écrans larges --- */
+@media (min-width: 1024px) {
+  :root {
+    --fs-hero: 3.5rem;   /* gros titre desktop */
+    --fs-h1: 2.5rem;     /* titre principal */
+    --fs-h2: 2rem;       
+    --fs-h3: 1.5rem;
+    --fs-body: 1.1rem;   /* texte normal */
+    --fs-small: 0.9rem;  /* crédits, mentions */
+  }
 }
+/*************** */
 
 /******* OMBRES ET TRANSITIONS */
 :root {
   --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.15); /* box-shadow */
   --shadow-strong: 0 8px 16px rgba(0, 0, 0, 0.3); /* box-shadow */
+
   --transition-fast: all 0.2s ease;/* transition */
   --transition-slow: all 0.5s ease; /* transition */
 }
 
 /******* INTERLIGNES */
 :root{
-  --lh-tight: 1.2;
-  --lh-normal: 1.5;
-  --lh-relaxed: 1.8;
+  --lh-tight: 1.2; /*line-height*/
+  --lh-normal: 1.5; /*line-height*/
+  --lh-relaxed: 1.8; /*line-height*/
 }
