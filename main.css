@@ -11,7 +11,7 @@
 
 /******* COULEURS GLOBALES */
 :root {
---bc-light: #ffffff;
+--bc-light: #ffffff; 
 --bc-dark: #121212;
 
 /* Couleurs standarts */
@@ -26,7 +26,7 @@
 --secondaire-light: #EFCAFF;
 --ac-light-1: #E0FFCB;
 --ac-light-2: #FFBFD0;
---ac-light-3: #FFEAC3;
+--ac-light-3: #FFBD85;
 
 /* Couleurs foncées */
 --principal-dark: #1A5F8A;
@@ -44,11 +44,12 @@
   /* Tailles de texte*/
   
   /* --- Mobile--- */
-  --fs-h1: 2.5rem;     /* titre principal */
-  --fs-h2: 1.5rem;      /* sous-titre */
-  --fs-h3: 1.25rem;
-  --fs-body: 0.95rem;   /* texte de base */
-  --fs-small: 0.8rem;   /* crédits, mentions */
+  --fs-h1: 2.5rem;     /* 40px*/
+  --fs-h2: 1.5rem;      /* 24px*/
+  --fs-h3: 1.25rem;     /* 20px*/
+  --fs-h4: 1.1rem;      /* 18px*/
+  --fs-body: 0.95rem;   /* 15px texte normal */
+  --fs-small: 0.8rem;   /* 12px crédits, mentions */
 }
 
 /* --- Écrans larges --- */
@@ -57,6 +58,7 @@
     --fs-h1: 3.5rem;     /* titre principal */
     --fs-h2: 2rem;       
     --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
     --fs-body: 1.1rem;   /* texte normal */
     --fs-small: 0.9rem;  /* crédits, mentions */
   }

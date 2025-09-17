@@ -29,24 +29,28 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
-h4 { font-size: 1.1rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.9rem; }
-
-/* ---- Paragraphes ---- */
-p {
-  font-family: var(--default-font);
-}
+h4 { font-size: var(--fs-h4); }
+p  {font-size: var(--fs-body);}
 
 /* ---- Liens ---- */
 a {
   text-decoration: none;
+  font-size: var(--fs-body);
 }
 
 /* ---- Boutons ---- */
 button{
   font-family: var(--default-font);
-  font-size: var(--fs-body);
   cursor: pointer;
-  border-width: 1.5px;
+  border-radius: 8px;
+}
+
+.bouton-petit{
+  width:100px;
+  height:40px;
+}
+
+.bouton-grand{
+  width:180px;
+  height:40px;
 }

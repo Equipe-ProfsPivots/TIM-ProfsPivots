@@ -8,13 +8,13 @@
 }
 
 /****** FLEXBOX */
-.flex-row {
+.rangee {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.flex-column {
+.colonne {
   display: flex;
   flex-direction: column;
 }
